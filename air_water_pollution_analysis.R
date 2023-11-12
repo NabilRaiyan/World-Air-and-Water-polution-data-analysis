@@ -9,3 +9,6 @@ dim(air_water_pollution_ds)
 
 is.na(air_water_pollution_ds)
 
+names(air_water_pollution_ds)
+
+colSums(is.na(air_water_pollution_ds))
