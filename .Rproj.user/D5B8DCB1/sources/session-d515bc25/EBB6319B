@@ -3,9 +3,9 @@
     "path": "E:/Courses/Data Science Projects/World's Air Quality and Water Pollution Dataset/World air and water pollution data analysis/air_water_pollution_analysis.R",
     "project_path": "air_water_pollution_analysis.R",
     "type": "r_source",
-    "hash": "1340177296",
+    "hash": "0",
     "contents": "",
-    "dirty": false,
+    "dirty": true,
     "created": 1699798229845.0,
     "source_on_save": false,
     "relative_order": 1,
@@ -13,7 +13,7 @@
         "tempName": "Untitled1",
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "4,0",
+        "cursorPosition": "7,27",
         "scrollLine": "0"
     },
     "folds": "",
@@ -21,7 +21,7 @@
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1699798422273,
+    "last_content_update": 1699798558371,
     "read_only": false,
     "read_only_alternatives": []
 }
