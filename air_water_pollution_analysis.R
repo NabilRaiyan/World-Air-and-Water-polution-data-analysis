@@ -2,3 +2,10 @@ air_water_pollution_ds <- read.csv("E:/Courses/Data Science Projects/World's Air
 
 head(air_water_pollution_ds)
 tail(air_water_pollution_ds)
+
+str(air_water_pollution_ds)
+summary(air_water_pollution_ds)
+dim(air_water_pollution_ds)
+
+is.na(air_water_pollution_ds)
+
