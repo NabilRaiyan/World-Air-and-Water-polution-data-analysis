@@ -19,3 +19,5 @@ names(air_water_pollution_ds)[names(air_water_pollution_ds) == "X..Country."] <-
 names(air_water_pollution_ds)[names(air_water_pollution_ds) == "X..AirQuality."] <- "AirQuality"
 names(air_water_pollution_ds)[names(air_water_pollution_ds) == "X..WaterPollution."] <- "WaterPollution"
 
+air_quality_outliers <- boxplot(air_water_pollution_ds$AirQuality, main="Air quality distribution", ylab="Air quality")$out
+cat("Potential Air Quality Outliers: ", air_quality_outliers, "\n")
