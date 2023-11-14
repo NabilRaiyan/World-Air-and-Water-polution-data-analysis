@@ -23,3 +23,6 @@ names(air_water_pollution_ds)[names(air_water_pollution_ds) == "X..WaterPollutio
 
 air_quality_outliers <- boxplot(air_water_pollution_ds$AirQuality, main="Air quality distribution", ylab="Air quality")$out
 cat("Potential Air Quality Outliers: ", air_quality_outliers, "\n")
+
+water_pollution_outliers <- boxplot(air_water_pollution_ds$WaterPollution, main="Water Pollution Distribution", ylab="Water Pollution")$out
+cat("Potentials Water pollution outliers are: ", water_pollution_outliers, "\n")
