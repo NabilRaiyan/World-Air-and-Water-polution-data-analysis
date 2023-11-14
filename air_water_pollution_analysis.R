@@ -1,5 +1,7 @@
-air_water_pollution_ds <- read.csv("E:/Courses/Data Science Projects/World's Air Quality and Water Pollution Dataset/cities_air_quality_water_pollution.csv")
+options(max.print = .Machine$integer.max)
 
+
+air_water_pollution_ds <- read.csv("E:/Courses/Data Science Projects/World's Air Quality and Water Pollution Dataset/cities_air_quality_water_pollution.csv")
 air_water_pollution_ds
 
 head(air_water_pollution_ds)
