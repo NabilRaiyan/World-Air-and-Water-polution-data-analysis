@@ -24,5 +24,15 @@ names(air_water_pollution_ds)[names(air_water_pollution_ds) == "X..WaterPollutio
 air_quality_outliers <- boxplot(air_water_pollution_ds$AirQuality, main="Air quality distribution", ylab="Air quality")$out
 cat("Potential Air Quality Outliers: ", air_quality_outliers, "\n")
 
+air_quality_outliers_row <- which(air_water_pollution_ds$AirQuality > 100)
+cat("potential air quality outliers rows: ", air_quality_outliers_row, "\n")
+
+
 water_pollution_outliers <- boxplot(air_water_pollution_ds$WaterPollution, main="Water Pollution Distribution", ylab="Water Pollution")$out
 cat("Potentials Water pollution outliers are: ", water_pollution_outliers, "\n")
+
+water_pollution_outliers_rows <- which(air_water_pollution_ds$WaterPollution > 100)
+cat("Water pollution outliers rows: ", water_pollution_outliers_rows, "\n")
+
+
+
