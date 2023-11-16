@@ -36,6 +36,6 @@ cat("Water pollution outliers rows: ", water_pollution_outliers_rows, "\n")
 
 for (i in 1:3963){
   if (nchar(air_water_pollution_ds$Regions[i]) == 3){
-    cat("Value missing ")
+    air_water_pollution_ds$Regions[i] <- NA
   }
 }
