@@ -44,4 +44,3 @@ mode_value <- names(frequent_table)[which.max(frequent_table)]
 mode_value
 
 
-
