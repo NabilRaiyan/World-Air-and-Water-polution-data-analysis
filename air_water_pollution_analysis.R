@@ -39,7 +39,9 @@ for (i in 1:3963){
     air_water_pollution_ds$Regions[i] <- NA
   }
 }
-
+frequent_table <- table(air_water_pollution_ds$Regions)
+mode_value <- names(frequent_table)[which.max(frequent_table)]
+mode_value
 
 
 
