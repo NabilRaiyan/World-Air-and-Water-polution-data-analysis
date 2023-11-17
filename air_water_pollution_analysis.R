@@ -43,3 +43,7 @@ frequent_table <- table(air_water_pollution_ds$Regions)
 mode_value_regions <- names(frequent_table)[which.max(frequent_table)]
 mode_value_regions
 
+
+frequent_table_air_quality <- table(air_water_pollution_ds$AirQuality)
+mode_value_airQuality <- as.numeric(names(frequent_table_air_quality)[which.max(frequent_table_air_quality)])
+mode_value_airQuality
