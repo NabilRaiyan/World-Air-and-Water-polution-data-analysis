@@ -42,8 +42,12 @@ for (i in 1:3963){
 frequent_table <- table(air_water_pollution_ds$Regions)
 mode_value_regions <- names(frequent_table)[which.max(frequent_table)]
 cat("Mode value for regions: ", mode_value_regions, "\n")
-
 air_water_pollution_ds$Regions[is.na(air_water_pollution_ds$Regions)] <- mode_value_regions
+
+region_pattern <- "[.?/'<>|{}()]"
+invalid_value <- grepl(region_pattern, air_water_pollution_ds$Regions)
+cat("Invalid value: ", "\n")
+air_water_pollution_ds[invalid_value, ]
 
 
 frequent_table_air_quality <- table(air_water_pollution_ds$AirQuality)
