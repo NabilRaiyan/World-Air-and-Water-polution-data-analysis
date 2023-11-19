@@ -41,17 +41,19 @@ for (i in 1:3963){
 }
 frequent_table <- table(air_water_pollution_ds$Regions)
 mode_value_regions <- names(frequent_table)[which.max(frequent_table)]
-mode_value_regions
+cat("Mode value for regions: ", mode_value_regions, "\n")
 
 
 frequent_table_air_quality <- table(air_water_pollution_ds$AirQuality)
 mode_value_airQuality <- as.numeric(names(frequent_table_air_quality)[which.max(frequent_table_air_quality)])
-mode_value_airQuality
+cat("Mode value for air quality: ", mode_value_airQuality, "\n")
+
 
 
 frequent_table_water_pollution <- table(air_water_pollution_ds$WaterPollution)
 mode_value_water <- as.numeric(names(frequent_table_water_pollution)[which.max(frequent_table_water_pollution)])
-mode_value_water
+cat("Mode value for water pollution: ", mode_value_water, "\n")
+
 
 air_water_pollution_ds
 
