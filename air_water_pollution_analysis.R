@@ -56,13 +56,14 @@ frequent_table_air_quality <- table(air_water_pollution_ds$AirQuality)
 mode_value_airQuality <- as.numeric(names(frequent_table_air_quality)[which.max(frequent_table_air_quality)])
 cat("Mode value for air quality: ", mode_value_airQuality, "\n")
 
-air_quality_mean <- mean(air_water_pollution_ds$AirQuality, na.rm = TRUE)
-air_quality_mean
+air_quality_median <- median(air_water_pollution_ds$AirQuality, na.rm = TRUE)
+air_quality_median
 
 
 frequent_table_water_pollution <- table(air_water_pollution_ds$WaterPollution)
 mode_value_water <- as.numeric(names(frequent_table_water_pollution)[which.max(frequent_table_water_pollution)])
 cat("Mode value for water pollution: ", mode_value_water, "\n")
+
 
 
 air_water_pollution_ds
