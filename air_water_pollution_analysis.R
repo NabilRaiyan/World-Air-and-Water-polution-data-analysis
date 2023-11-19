@@ -56,6 +56,8 @@ frequent_table_air_quality <- table(air_water_pollution_ds$AirQuality)
 mode_value_airQuality <- as.numeric(names(frequent_table_air_quality)[which.max(frequent_table_air_quality)])
 cat("Mode value for air quality: ", mode_value_airQuality, "\n")
 
+air_quality_mean <- mean(air_water_pollution_ds$AirQuality, na.rm = TRUE)
+air_quality_mean
 
 
 frequent_table_water_pollution <- table(air_water_pollution_ds$WaterPollution)
