@@ -44,11 +44,13 @@ mode_value_regions <- names(frequent_table)[which.max(frequent_table)]
 cat("Mode value for regions: ", mode_value_regions, "\n")
 air_water_pollution_ds$Regions[is.na(air_water_pollution_ds$Regions)] <- mode_value_regions
 
-region_pattern <- "[.?/'<>|{}()]"
+region_pattern <- "[.?/]"
 invalid_value <- grepl(region_pattern, air_water_pollution_ds$Regions)
 cat("Invalid value: ", "\n")
 air_water_pollution_ds[invalid_value, ]
 
+rows_region_to_delete <- c(504,505,752,766,1507,1845,1906,1950,2177,2529,2914,3078,3189,3449)
+air_water_pollution_ds<- air_water_pollution_ds[-rows_region_to_delete, ]
 
 frequent_table_air_quality <- table(air_water_pollution_ds$AirQuality)
 mode_value_airQuality <- as.numeric(names(frequent_table_air_quality)[which.max(frequent_table_air_quality)])
@@ -62,6 +64,7 @@ cat("Mode value for water pollution: ", mode_value_water, "\n")
 
 
 air_water_pollution_ds
+
 
 
 
