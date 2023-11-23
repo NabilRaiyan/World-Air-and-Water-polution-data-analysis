@@ -106,7 +106,13 @@ library(ggplot2)
 
 # Histogram of air quality for different regions of different countries
 ggplot(air_water_pollution_ds, aes(x = AirQuality)) +
-  geom_histogram(binwidth = 10, fill = "blue", color = "white", alpha = 0.7) +
+  geom_histogram(binwidth = 5, fill = "blue", color = "white", alpha = 0.7) +
   labs(x = "Air Quality", y="Frequency") +
   ggtitle("Histogram of air quality for different regions of different countries")
 
+# Histogram of water pollution for different regions of different countries
+
+ggplot(air_water_pollution_ds, aes(x = WaterPollution)) + 
+  geom_histogram(binwidth = 5, fill = "blue", color="white", alpha = 0.7) +
+  labs(x = "Water pollution", y = "Frequency") + 
+  ggtitle("Histogram of water pollution for different regions of different countries")
