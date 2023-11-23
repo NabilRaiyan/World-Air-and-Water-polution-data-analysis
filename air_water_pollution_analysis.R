@@ -94,3 +94,9 @@ for (i in 1:length(air_water_pollution_ds$AirQuality)){
     air_water_pollution_ds$AirQuality[i] = air_quality_median
   }
 }
+
+for (i in 1:length(air_water_pollution_ds$WaterPollution)){
+  if(air_water_pollution_ds$WaterPollution[i] > 100){
+    air_water_pollution_ds$WaterPollution[i] = water_pollution_median
+  }
+}
