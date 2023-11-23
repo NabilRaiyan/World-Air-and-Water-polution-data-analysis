@@ -100,3 +100,13 @@ for (i in 1:length(air_water_pollution_ds$WaterPollution)){
     air_water_pollution_ds$WaterPollution[i] = water_pollution_median
   }
 }
+
+# Visualizing of data (histogram, barplot)
+library(ggplot2)
+
+# Histogram of air quality for different regions of different countries
+ggplot(air_water_pollution_ds, aes(x = AirQuality)) +
+  geom_histogram(binwidth = 10, fill = "blue", color = "white", alpha = 0.7) +
+  labs(x = "Air Quality", y="Frequency") +
+  ggtitle("Histogram of air quality for different regions of different countries")
+
