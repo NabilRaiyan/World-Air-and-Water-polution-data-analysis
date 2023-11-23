@@ -1,5 +1,6 @@
 options(max.print = .Machine$integer.max)
 
+# Importing and Inspecting the data set
 
 air_water_pollution_ds <- read.csv("E:/Courses/Data Science Projects/World's Air Quality and Water Pollution Dataset/cities_air_quality_water_pollution.csv")
 air_water_pollution_ds
@@ -16,6 +17,9 @@ is.na(air_water_pollution_ds)
 names(air_water_pollution_ds)
 
 colSums(is.na(air_water_pollution_ds))
+
+# Changing columns name of the data set
+
 names(air_water_pollution_ds)[names(air_water_pollution_ds) == "X..Region."] <- "Regions"
 names(air_water_pollution_ds)[names(air_water_pollution_ds) == "X..Country."] <- "Countries"
 names(air_water_pollution_ds)[names(air_water_pollution_ds) == "X..AirQuality."] <- "AirQuality"
@@ -57,7 +61,8 @@ mode_value_airQuality <- as.numeric(names(frequent_table_air_quality)[which.max(
 cat("Mode value for air quality: ", mode_value_airQuality, "\n")
 
 air_quality_median <- median(air_water_pollution_ds$AirQuality, na.rm = TRUE)
-air_quality_median
+cat("Median value for air quality: ", air_quality_median, "\n")
+
 
 
 frequent_table_water_pollution <- table(air_water_pollution_ds$WaterPollution)
@@ -65,8 +70,9 @@ mode_value_water <- as.numeric(names(frequent_table_water_pollution)[which.max(f
 cat("Mode value for water pollution: ", mode_value_water, "\n")
 
 
+water_pollution_median <- median(air_water_pollution_ds$WaterPollution, na.rm = TRUE)
+cat("Median value for water pollution: ", water_pollution_median, "\n")
 
-air_water_pollution_ds
 
 
 
