@@ -45,11 +45,14 @@ for (i in 1:3963){
     air_water_pollution_ds$Regions[i] <- NA
   }
 }
+
+# Finding mode value of regions
 frequent_table <- table(air_water_pollution_ds$Regions)
 mode_value_regions <- names(frequent_table)[which.max(frequent_table)]
 cat("Mode value for regions: ", mode_value_regions, "\n")
 air_water_pollution_ds$Regions[is.na(air_water_pollution_ds$Regions)] <- mode_value_regions
 
+# Finding and deleting invalid values of regions column
 region_pattern <- "[.?/]"
 invalid_value <- grepl(region_pattern, air_water_pollution_ds$Regions)
 cat("Invalid value: ", "\n")
@@ -58,19 +61,22 @@ air_water_pollution_ds[invalid_value, ]
 rows_region_to_delete <- c(504,505,752,766,1507,1845,1906,1950,2177,2529,2914,3078,3189,3449)
 air_water_pollution_ds<- air_water_pollution_ds[-rows_region_to_delete, ]
 
+
+# Finding mode value of air quality and water pollution column
+
 frequent_table_air_quality <- table(air_water_pollution_ds$AirQuality)
 mode_value_airQuality <- as.numeric(names(frequent_table_air_quality)[which.max(frequent_table_air_quality)])
 cat("Mode value for air quality: ", mode_value_airQuality, "\n")
-
-air_quality_median <- median(air_water_pollution_ds$AirQuality, na.rm = TRUE)
-cat("Median value for air quality: ", air_quality_median, "\n")
-
-
 
 frequent_table_water_pollution <- table(air_water_pollution_ds$WaterPollution)
 mode_value_water <- as.numeric(names(frequent_table_water_pollution)[which.max(frequent_table_water_pollution)])
 cat("Mode value for water pollution: ", mode_value_water, "\n")
 
+
+# Finding median value of air quality and water pollution column
+
+air_quality_median <- median(air_water_pollution_ds$AirQuality, na.rm = TRUE)
+cat("Median value for air quality: ", air_quality_median, "\n")
 
 water_pollution_median <- median(air_water_pollution_ds$WaterPollution, na.rm = TRUE)
 cat("Median value for water pollution: ", water_pollution_median, "\n")
