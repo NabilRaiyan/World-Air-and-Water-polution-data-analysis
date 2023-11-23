@@ -82,6 +82,15 @@ water_pollution_median <- median(air_water_pollution_ds$WaterPollution, na.rm = 
 cat("Median value for water pollution: ", water_pollution_median, "\n")
 
 
+# Replacing missing values of air and water pollution with median
 
+air_water_pollution_ds$AirQuality[is.na(air_water_pollution_ds$AirQuality)] <- air_quality_median
+air_water_pollution_ds$WaterPollution[is.na(air_water_pollution_ds$WaterPollution)] <- water_pollution_median
 
+# Replacing Outliers value of air and water pollution with median
 
+for (i in 1:length(air_water_pollution_ds$AirQuality)){
+  if (air_water_pollution_ds$AirQuality[i] > 100){
+    air_water_pollution_ds$AirQuality[i] = air_quality_median
+  }
+}
