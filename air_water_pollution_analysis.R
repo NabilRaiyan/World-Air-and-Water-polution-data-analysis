@@ -25,6 +25,7 @@ names(air_water_pollution_ds)[names(air_water_pollution_ds) == "X..Country."] <-
 names(air_water_pollution_ds)[names(air_water_pollution_ds) == "X..AirQuality."] <- "AirQuality"
 names(air_water_pollution_ds)[names(air_water_pollution_ds) == "X..WaterPollution."] <- "WaterPollution"
 
+# Finding air quality and water pollution outliers
 air_quality_outliers <- boxplot(air_water_pollution_ds$AirQuality, main="Air quality distribution", ylab="Air quality")$out
 cat("Potential Air Quality Outliers: ", air_quality_outliers, "\n")
 
@@ -38,6 +39,7 @@ cat("Potentials Water pollution outliers are: ", water_pollution_outliers, "\n")
 water_pollution_outliers_rows <- which(air_water_pollution_ds$WaterPollution > 100)
 cat("Water pollution outliers rows: ", water_pollution_outliers_rows, "\n")
 
+# Replacing empty value of region column with NA
 for (i in 1:3963){
   if (nchar(air_water_pollution_ds$Regions[i]) == 3){
     air_water_pollution_ds$Regions[i] <- NA
