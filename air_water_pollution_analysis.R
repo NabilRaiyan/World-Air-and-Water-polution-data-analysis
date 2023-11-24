@@ -116,3 +116,16 @@ ggplot(air_water_pollution_ds, aes(x = WaterPollution)) +
   geom_histogram(binwidth = 5, fill = "blue", color="white", alpha = 0.7) +
   labs(x = "Water pollution", y = "Frequency") + 
   ggtitle("Histogram of water pollution for different regions of different countries")
+
+
+# Finding Measure of spread of air quality and water pollution data set
+
+air_quality_var <- var(air_water_pollution_ds$AirQuality)
+air_quality_sd <- sd(air_water_pollution_ds$AirQuality)
+air_quality_range <- range(air_water_pollution_ds$AirQuality)
+
+cat("Air Quality variance: ", air_quality_var, "\n")
+cat("Air quality Standard Deviation: ", air_quality_sd, "\n")
+cat("Air Quality Range: ", air_quality_range, "\n")
+
+
