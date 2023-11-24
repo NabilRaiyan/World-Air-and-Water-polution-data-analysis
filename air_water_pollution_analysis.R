@@ -129,3 +129,12 @@ cat("Air quality Standard Deviation: ", air_quality_sd, "\n")
 cat("Air Quality Range: ", air_quality_range, "\n")
 
 
+water_pollution_var <- var(air_water_pollution_ds$WaterPollution)
+water_pollution_sd <- sd(air_water_pollution_ds$WaterPollution)
+water_pollution_range <- range(air_water_pollution_ds$WaterPollution)
+
+cat("Water Pollution variance: ", water_pollution_var, "\n")
+cat("Water Pollution Standard Deviation: ", water_pollution_sd, "\n")
+cat("Water Pollution Range: ", water_pollution_range, "\n")
+
+
