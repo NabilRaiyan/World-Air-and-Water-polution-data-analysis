@@ -137,5 +137,3 @@ cat("Water Pollution variance: ", water_pollution_var, "\n")
 cat("Water Pollution Standard Deviation: ", water_pollution_sd, "\n")
 cat("Water Pollution Range: ", water_pollution_range, "\n")
 
-
-
