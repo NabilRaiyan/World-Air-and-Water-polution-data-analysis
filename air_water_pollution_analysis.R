@@ -149,3 +149,7 @@ biplot(pca_result)
 # Pairwise scatterplot matrix
 pairs(air_water_pollution_ds[, c("AirQuality", "WaterPollution")])
 
+
+# Correlation matrix
+cor_matrix <- cor(air_water_pollution_ds[, c("AirQuality", "WaterPollution")])
+print(cor_matrix)
