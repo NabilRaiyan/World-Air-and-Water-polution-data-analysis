@@ -137,3 +137,13 @@ cat("Water Pollution variance: ", water_pollution_var, "\n")
 cat("Water Pollution Standard Deviation: ", water_pollution_sd, "\n")
 cat("Water Pollution Range: ", water_pollution_range, "\n")
 
+# Multivariate data analysis
+
+numeric_data <- air_water_pollution_ds[, c("AirQuality", "WaterPollution")]
+scaled_data <- scale(numeric_data)
+
+pca_result <- prcomp(scaled_data, scale = TRUE)
+summary(pca_result)
+biplot(pca_result)
+
+
