@@ -153,3 +153,12 @@ pairs(air_water_pollution_ds[, c("AirQuality", "WaterPollution")])
 # Correlation matrix
 cor_matrix <- cor(air_water_pollution_ds[, c("AirQuality", "WaterPollution")])
 print(cor_matrix)
+
+
+
+
+# Scatter plot for air quality vs. water pollution
+ggplot(air_water_pollution_ds, aes(x = AirQuality, y = WaterPollution)) +
+  geom_point(color = "green", alpha = 0.5) +
+  labs(x = "Air Quality", y = "Water Pollution") +
+  ggtitle("Scatter Plot of Air Quality vs. Water Pollution")
