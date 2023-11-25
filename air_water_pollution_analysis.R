@@ -146,4 +146,6 @@ pca_result <- prcomp(scaled_data, scale = TRUE)
 summary(pca_result)
 biplot(pca_result)
 
+# Pairwise scatterplot matrix
+pairs(air_water_pollution_ds[, c("AirQuality", "WaterPollution")])
 
