@@ -147,10 +147,3 @@ summary(pca_result)
 biplot(pca_result)
 
 
-# Hierarchical clustering
-hclust_result <- hclust(dist(scaled_data))
-plot(hclust_result)
-
-# K-means clustering
-kmeans_result <- kmeans(scaled_data, centers = 3)
-kmeans_result
