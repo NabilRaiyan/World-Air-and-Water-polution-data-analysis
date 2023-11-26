@@ -23,4 +23,12 @@
          <li>Finding measure of spread</li>
          <li>Finding central tendency</li>
        </ul>
+
+<h4>3. Multivariate Analysis:</h4>
+       <ul>
+          <li>Principal Component Analysis (PCA)</li>
+          <li>Pairwise scatterplot matrix</li>
+          <li>Correlation matrix</li>
+          <li>Scatter plot for air quality vs. water pollution</li>
+       </ul>
       
