@@ -32,3 +32,11 @@
           <li>Scatter plot for air quality vs. water pollution</li>
        </ul>
       
+<h4>Getting Started</h4>
+<p>To replicate the analysis, follow these steps:</p>
+<ul>
+       <li>Clone the repository:</li>
+       <li>git clone https://github.com/NabilRaiyan/World-Air-and-Water-polution-data-analysis.git</li>
+</ul>
+
+
