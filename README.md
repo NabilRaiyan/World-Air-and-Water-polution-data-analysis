@@ -34,9 +34,16 @@
       
 <h4>Getting Started</h4>
 <p>To replicate the analysis, follow these steps:</p>
+
 <ul>
-       <li>Clone the repository:</li>
-       <li>git clone https://github.com/NabilRaiyan/World-Air-and-Water-polution-data-analysis.git</li>
+      <li>git clone https://github.com/NabilRaiyan/World-Air-and-Water-polution-data-analysis.git</li>
+       <li>Open and run the R script on Jupyter notebook or R studio containing the data analysis code.</li>
+</ul>
+
+<h4>Project Dependencies</h4>
+<p>The project uses R for data analysis. Ensure you have R installed on your machine. Additionally, the following R package are used:</p>
+<ul>
+       <li>ggplot2</li>
 </ul>
 
 
