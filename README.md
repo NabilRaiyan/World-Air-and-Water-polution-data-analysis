@@ -31,6 +31,16 @@
           <li>Correlation matrix</li>
           <li>Scatter plot for air quality vs. water pollution</li>
        </ul>
+
+<h4>Screenshots</h4>
+![image](https://github.com/NabilRaiyan/World-Air-and-Water-polution-data-analysis/assets/31074461/3824f67d-0e49-4ae3-95e2-c791a3b5ba19)
+![image](https://github.com/NabilRaiyan/World-Air-and-Water-polution-data-analysis/assets/31074461/16563384-3f5f-4b4a-8296-e5c2466d6a67)
+![image](https://github.com/NabilRaiyan/World-Air-and-Water-polution-data-analysis/assets/31074461/290adb0d-c9fa-4434-86c3-520a512ec15a)
+![image](https://github.com/NabilRaiyan/World-Air-and-Water-polution-data-analysis/assets/31074461/907a48cf-aa1e-4848-898d-e0eadb192bb0)
+
+
+
+
       
 <h4>Getting Started</h4>
 <p>To replicate the analysis, follow these steps:</p>
