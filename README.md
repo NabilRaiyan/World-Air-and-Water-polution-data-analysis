@@ -13,4 +13,14 @@
          <li>Handling outliers</li>
          <li>Handling invalid values</li>
        </ul>
+
+<h4>2. Univariate Analysis:</h4>
+       <ul>
+         <li>Summary statistics</li>
+         <li>Distribution of Air Quality and Water Pollution</li>
+         <li>Boxplots and histograms</li>
+         <li>Identification of outliers</li>
+         <li>Finding measure of spread</li>
+         <li>Finding central tendency</li>
+       </ul>
       
